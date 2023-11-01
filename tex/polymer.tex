@@ -1,0 +1,14 @@
+\documentclass{article}
+
+\usepackage{chemfig}
+
+\usepackage{chemmacros}
+\chemsetup{modules={polymers}}
+
+\begin{document}
+\setchemfig{atom sep=18.34pt}
+%\setatomsep{18.34pt}
+\chemfig{-[@{a}]CH_{2}-[::-45]C(-[::-90]H_{3}C)(=CH-[::45]CH_{2}-[@{b}])}
+\makepolymerdelims[delimiters={[]}]{5pt}[27pt]{a}{b}
+
+\end{document}

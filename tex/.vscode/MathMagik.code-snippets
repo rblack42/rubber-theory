@@ -1,0 +1,14 @@
+{
+	"Insert figure": {
+        "prefix": "latex-figure",
+        "body": [
+            "\\begin{figure}[H]",
+                "\t\\includegraphics[width='${1:0.7}'\\textwidth]{'${2:path}'}",
+                "\t\\centering",
+                "\t\\caption*{'${3:caption}'}",
+            "\\end{figure}",
+            "$4"
+        ],
+        "description": "Insert centered figure with caption."
+    }
+}
